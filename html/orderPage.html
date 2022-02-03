@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주문페이지</title>
+    <link rel="stylesheet" href="../css/main.css">
     <style>
         table, td, th{
             border: 1px solid black;
@@ -22,102 +23,128 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <div>
-            <a href="mainPage.html"><img src="../img/img1.png" width="300px" alt="레드향 메인페이지 이동"></a>
+<body class="SLEIGothicTTF_font">
+    <header> <!-- h180 -->
+        <div style="text-align: right; background-color: white;">
+            <audio src="../resource/spring.mp3" controls autoplay></audio>
+            ID <input type="text" style="width: 100px;" autofocus>
+            PW <input type="password" style="width: 100px;">
+            <input type="button" value="로그인">
+             
         </div>
-    </header>
+        <h1><a href="mainPage.html">레드향이란?</a></h1>
+    
+            <div class="logo_display"> <!-- w200 -->
+                <a href="mainPage.html"><img src="../img/img1.png" alt="레드향 메인페이지 이동" style="height: 100px; width: 200px;"></a>
+            </div>
+    
+            <nav> <!-- w650 -->
+                <ul style="float: left;">
+                    <li><a href="orderPage.html" class="nav_dp">주문하기</a></li>
+                    <li><a href="map.html" class="nav_dp">찾아오시는 길</a></li>
+                    <li><a href="sign-upPage.html" class="nav_dp">회원가입</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
     <main>
-        <h1>주문하기</h1>
-
-        <table>
-            <caption>상품구성</caption>
-            <tr>
-                <th>종류</th>
-                <th>개수</th>
-                <th>중량</th>
-                <th>가격</th>
-            </tr>
-            <tr>
-                <td>특등품</td>
-                <td>8~10개</td>
-                <td>5kg</td>
-                <td>58,000\</td>
-            </tr>
-            <tr>
-                <td>선물용</td>
-                <td>8~10개</td>
-                <td>4kg</td>
-                <td>43,000\</td>
-            </tr>
-            <tr>
-                <td>일반용</td>
-                <td>7~9개</td>
-                <td>1kg</td>
-                <td>28,000\</td>
-            </tr>
-        </table>
-
-        <form>
-            <fieldset>
-                <legend>상품선택</legend>
-                    <label><input type="radio" name="kind" checked> 특등품</label>
-                    <label><input type="radio" name="kind"> 선물용</label>
-                    <label><input type="radio" name="kind"> 일반용</label>
-                    <select size="1">
-                        <option value="1">1개</option>
-                        <option value="2">2개</option>
-                        <option value="3">3개</option>
-                        <option value="4">4개</option>
-                        <option value="5">5개</option>
-                    </select>
-                    <br>
-                    <label><input type="checkbox" checked>고급포장</label>
-               
-            </fieldset>
-
-            <br><br>
-            <fieldset>
-                <legend>배송정보</legend>
-                <ul style="list-style-type: none;">
-                    <li>받으시는 분<input type="text" autofocus required></li>
-                    <li>연락처<input type="text"placeholder="xxx-xxxx-xxxx" style="width: 150px;" required></li>
-                    <li>주소<input type="address" style="width: 400px;" required></li>
-                    <li>상세주소<input type="text" style="width: 370px;" placeholder="없으면 공백"></li>
-                    <label><input type="checkbox">회원정보와 동일함</label> <!-- 자바스크립트로 구동예정 -->
-                    <br><br>
-                    특이사항 <br> <textarea cols="35" rows="10" placeholder="요청사항이 있으시면 말씀해 주세요"></textarea>
-                    <br>
-                    <label><input type="radio" name="post" checked> 빠른배송</label><sub>(배송비 5천원)</sub>
-                    <label><input type="radio" name="post"> 일반배송</label>
-                    <label><input type="radio" name="post"> 예약배송</label>
-                    <input type="date">
-                    
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>결제정보</legend>
-                <ul style="list-style-type: none;">
-                    <li><label><input type="radio" name="pay" checked> 무통장 입금</label>
+        <div style="margin: 0px 50px; padding: 10px;">
+            <h2>주문하기</h2>
+    
+            <table>
+                <caption>상품구성</caption>
+                <tr>
+                    <th>종류</th>
+                    <th>개수</th>
+                    <th>중량</th>
+                    <th>가격</th>
+                </tr>
+                <tr>
+                    <td>특등품</td>
+                    <td>8~10개</td>
+                    <td>5kg</td>
+                    <td>58,000\</td>
+                </tr>
+                <tr>
+                    <td>선물용</td>
+                    <td>8~10개</td>
+                    <td>4kg</td>
+                    <td>43,000\</td>
+                </tr>
+                <tr>
+                    <td>일반용</td>
+                    <td>7~9개</td>
+                    <td>1kg</td>
+                    <td>28,000\</td>
+                </tr>
+            </table>
+    
+            <form>
+                <fieldset>
+                    <legend>상품선택</legend>
+                        <label><input type="radio" name="kind" checked> 특등품</label>
+                        <label><input type="radio" name="kind"> 선물용</label>
+                        <label><input type="radio" name="kind"> 일반용</label>
                         <select size="1">
-                            <option value="ibk">기업은행 980-006030-01-019</option>
-                            <option value="hana">하나은행 504-910594-70907</option>
+                            <option value="1">1개</option>
+                            <option value="2">2개</option>
+                            <option value="3">3개</option>
+                            <option value="4">4개</option>
+                            <option value="5">5개</option>
                         </select>
-                    </li>
-                    <li><label><input type="radio" name="pay"> 카드결제</label>
-                    <input type="button" value="외부결제"></li>
-                    <li><label><input type="radio" name="pay"> 휴대폰결제</label></li>
-                </ul>
-            </fieldset>
-
-
-            <input type="submit" value="주문하기">
-            <input type="reset" value="취소하기">
-            <br><br><br>
-        </form>
-        <a href="sign-upPage.html">회원가입</a>
-        <a href="mainPage.html">메인페이지로!</a>
+                        <br>
+                        <label><input type="checkbox" checked>고급포장</label>
+                   
+                </fieldset>
+    
+                <br><br>
+                <fieldset>
+                    <legend>배송정보</legend>
+                    <ul style="list-style-type: none;">
+                        <li><label>받으시는 분</label><input type="text" autofocus required></li>
+                        <li><label>연락처</label><input type="text"placeholder="xxx-xxxx-xxxx" required></li>
+                        <li><label>주소</label><input type="address" style="width: 370px;" required></li>
+                        <li><label>상세주소</label><input type="text" style="width: 370px;" placeholder="없으면 공백"></li>
+                        <label><input type="checkbox">회원정보와 동일함</label> <!-- 자바스크립트로 구동예정 -->
+                        <br><br>
+                        특이사항 <br> <textarea cols="35" rows="10" placeholder="요청사항이 있으시면 말씀해 주세요"></textarea>
+                        <br>
+                        <label><input type="radio" name="post" checked> 빠른배송</label><sub>(배송비 5천원)</sub>
+                        <label><input type="radio" name="post"> 일반배송</label>
+                        <label><input type="radio" name="post"> 예약배송</label>
+                        <input type="date">
+                        
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>결제정보</legend>
+                    <ul style="list-style-type: none;">
+                        <li><label><input type="radio" name="pay" checked> 무통장 입금</label>
+                            <select size="1">
+                                <option value="ibk">기업은행 980-006030-01-019</option>
+                                <option value="hana">하나은행 504-910594-70907</option>
+                            </select>
+                        </li>
+                        <li><label><input type="radio" name="pay"> 카드결제</label>
+                        <input type="button" value="외부결제"></li>
+                        <li><label><input type="radio" name="pay"> 휴대폰결제</label></li>
+                    </ul>
+                </fieldset>
+    
+    
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+                <br><br>
+            </form>
+        </div>
     </main>
+    <footer> <!-- h100 -->
+        <div style="padding: 10px;">
+            <p>Made by 강지우</p>
+            <p>Phone : 010-4240-3631</p>
+            <p>E-mail : poohharry@naver.com</p>
+        </div>
+    </footer>
 </body>
 </html>

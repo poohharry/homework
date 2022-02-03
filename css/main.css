@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+body{
+    width: 800px;
+    height: 1500px;
+    margin: 30px auto;
+}
+
+header{
+    width: 100%;
+    height: 180px;
+    background-color: orange;
+}
+
+main{
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(240, 183, 108);
+    
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+}
+
+/* header */
+audio{
+    height: 24px;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.logo_display{
+    height: 100px;
+    width: 200px;
+    background-color: coral;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;;
+}
+nav li{
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+nav{
+    width: 600px;
+    height: 100px;
+    float: left;
+}
+.nav_dp{
+    float: left;
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+}
+a:visited, a:link{
+    color: black;
+    text-decoration: none;
+}
+
+header li a:hover{
+    background-color: lightpink;
+}
+
+.img{
+    border-radius: 30px;
+}
+
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Gangwon_font{
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 15pt;
+}
+@font-face {
+    font-family: 'SLEIGothicTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SLEIGothicTTF_font{
+    font-family: 'SLEIGothicTTF';
+}
+@font-face {
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.twayair_font{
+    font-family: 'twayair';
+}
+@font-face {
+    font-family: 'twaysky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.twaysky_font{
+    font-family: 'twaysky';
+}
+
+
+ul li label{
+    display: inline-block;
+    width: 80px;
+}
